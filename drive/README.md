@@ -20,5 +20,6 @@ Structs.h
 # 修改Makefile添加下面，不要编进内核，必须用ko，直接闭眼复制进去完事
 obj-m := GobiNet.o
 GobiNet-objs := GobiUSBNet.o QMIDevice.o QMI.o
+obj-m += qmi_wwan_f.o
 # 最后编译。开机，上电，测速，网速450M左右，差不多就到这了。我仓库kernel默认加了，可以不打
 ```
