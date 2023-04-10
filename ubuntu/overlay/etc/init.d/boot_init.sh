@@ -1,6 +1,18 @@
 #!/bin/bash -e
 
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    case $1 in
+        0000)
+            BOARD_NAME='rk3588-hinlink-h88k'
+            BOARD_DTB='rk3588-hinlink-h88k.dtb'
+            BOARD_uEnv='uEnvh88k.txt'
+            ;;
+    esac
+
+    echo "BOARD_NAME:"$BOARD_NAME
+    echo "BOARD_DTB:"$BOARD_DTB
+    echo "BOARD_uEnv:"$BOARD_uEnv
+}
 
 # voltage_scale
 # 1.7578125 8bit
